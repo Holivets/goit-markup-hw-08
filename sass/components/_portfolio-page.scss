@@ -1,0 +1,118 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.fake-title {
+  @extend %visually-hidden;
+}
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter li + li {
+  margin-left: 8px;
+}
+.filter-buttons {
+  padding: 6px 22px;
+  border: 0;
+
+  background-color: $secondary-bg-color;
+  color: $title-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $transitionProperty, color $transitionProperty,
+    box-shadow $transitionProperty;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $secondary-title-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list li {
+  width: 370px;
+  margin-bottom: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+.card-link {
+  transition: box-shadow $transitionProperty;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+.card-info {
+  padding: 20px 24px;
+  border: 1px solid $border-portfolio-color;
+  border-top: none;
+}
+.examples-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-color;
+}
+.examples-type {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+.card-action {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform $transitionProperty,
+    background-color $transitionProperty;
+
+  .card-link:hover &,
+  .card-link:focus & {
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(-100%);
+  }
+}
+.examples-information {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+  right: 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: $secondary-title-color;
+}

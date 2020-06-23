@@ -1,0 +1,73 @@
+footer {
+  background-color: $footer-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  color: $secondary-title-color;
+}
+.address-section {
+  font-style: normal;
+}
+.address {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: $secondary-title-color;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.contacts-footer {
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color $transitionProperty;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-title {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $secondary-title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.socials {
+  display: flex;
+}
+.socials li:not(:last-child) {
+  margin-right: 10px;
+}
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  fill: $secondary-title-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: $transitionProperty;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

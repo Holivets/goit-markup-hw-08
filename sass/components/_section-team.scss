@@ -1,0 +1,59 @@
+.section.team {
+  background-color: $secondary-bg-color;
+}
+.team-list {
+  display: flex;
+}
+.team-list > li {
+  width: 270px;
+  background-color: $secondary-title-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.member-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.member-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.contacts-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+.contacts-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.contacts-list a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  fill: $svgColor;
+  transition: background-color $transitionProperty, fill $transitionProperty;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $secondary-title-color;
+  }
+}

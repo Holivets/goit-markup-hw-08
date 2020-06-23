@@ -1,0 +1,17 @@
+.clients-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.clients-link .icon {
+  display: block;
+  fill: $svgColor;
+  border: 1px solid $svgColor;
+  border-radius: 4px;
+  padding: 20px 0px;
+  transition: fill $transitionProperty, border-color $transitionProperty;
+}
+.clients-link:hover .icon,
+.clients-link:focus .icon {
+  fill: $accent-color;
+  border-color: $accent-color;
+}
