@@ -5,11 +5,18 @@ footer {
 .footer-flex {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 
   @media screen and(min-width:1200px) {
-    display: flex;
+    text-align: left;
     justify-content: space-between;
-    align-items: baseline;
   }
 }
 .logo-footer {
@@ -45,6 +52,10 @@ footer {
   display: block;
   margin-bottom: 20px;
 
+  @media screen and(max-width:1199px) {
+    margin-top: 60px;
+  }
+
   color: $secondary-title-color;
   font-weight: 700;
   font-size: 14px;
@@ -54,6 +65,10 @@ footer {
 }
 .socials {
   display: flex;
+
+  @media screen and(max-width:1199px) {
+    justify-content: center;
+  }
 }
 .socials li:not(:last-child) {
   margin-right: 10px;

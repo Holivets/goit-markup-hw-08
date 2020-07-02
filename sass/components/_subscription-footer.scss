@@ -9,6 +9,13 @@
   padding-bottom: 15px;
   padding-left: 16px;
 
+  @media screen and(max-width:1199px) {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -21,6 +28,9 @@
   border-radius: 4px;
   padding: 10px 28px 10px 29px;
   min-width: 200px;
+  @media screen and(max-width:1199px) {
+    margin-top: 20px;
+  }
 
   color: $secondary-title-color;
   background-color: $accent-color;

@@ -24,10 +24,12 @@
   border: 1px solid $svgColor;
   border-radius: 4px;
   transition: fill $transitionProperty, border-color $transitionProperty;
-  
-  &:hover, &:focus {
-  fill: $accent-color;
-  border-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
 .clients-link .icon {
   height: 50px;

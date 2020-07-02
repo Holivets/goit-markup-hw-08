@@ -151,9 +151,16 @@ nav {
   color: #2196f3;
   font-family: raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo-header {
@@ -385,19 +392,30 @@ footer {
 .footer-flex {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -443,10 +461,24 @@ footer {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    margin-top: 60px;
+  }
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .socials li:not(:last-child) {
@@ -492,6 +524,15 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1199px) {
+  .subscription input[type='email'] {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .subscribe-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -510,6 +551,12 @@ footer {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-button {
+    margin-top: 20px;
+  }
 }
 
 .subscribe-button .icon {
