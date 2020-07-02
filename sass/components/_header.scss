@@ -1,4 +1,5 @@
 header {
+  position: relative;
   border-bottom: 1px solid $border-header-color;
 }
 .header-nav {
@@ -7,6 +8,36 @@ header {
 nav {
   display: flex;
   align-items: center;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  background-color: $secondary-title-color;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 393px;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
 }
 .site-nav {
   display: flex;

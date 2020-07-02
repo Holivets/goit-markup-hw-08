@@ -2,16 +2,28 @@
   background-color: $secondary-bg-color;
 }
 .team-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .team-list > li {
-  width: 270px;
   background-color: $secondary-title-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 .member-name {
@@ -35,8 +47,12 @@
 }
 .contacts-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-evenly;
+  }
 }
 .contacts-list li:not(:last-child) {
   margin-right: 10px;

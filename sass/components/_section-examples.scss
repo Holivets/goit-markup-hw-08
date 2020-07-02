@@ -1,12 +1,23 @@
+.section.examples {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 33px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .examples-list {
   display: flex;

@@ -21,13 +21,13 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo-header"> Studio</span></a
           >
-          <ul class="site-nav">
+          <button type="button" class="menu-button"  aria-expanded="false" aria-controls="menu-container" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню"><use class="icon-menu" href="./images/sprite.svg#menu"></use><use class="icon-cross" href="./images/sprite.svg#cross_menu"></use></svg></button>
+          <div class="menu-container" id="menu-container" data-menu><ul class="site-nav">
             <li><a href="./index.html" class="link current">Студия</a></li>
             <li><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li><a href="" class="link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="header-list">
+          <ul class="header-list">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts-header">
               <svg class="icon" width="16" height="11">
@@ -39,7 +39,8 @@
             <a href="tel:+380961111111" class="contacts-header"><svg class="icon" width="10" height="15"><use href=./images/sprite.svg#smartphone></use></svg>+38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul></div>
+        </nav>
       </div>
     </header>
     <main>
@@ -52,13 +53,13 @@
           <button data-modal-open type="button" class="order-button">Заказать услугу</button>
         </div>
       </section>
-      <section class="section no-padding">
+      <section class="section">
         <div class="container">
           <!-- уявний заголовок-->
           <h2 class="fake-title">Наши преимущества</h2>
           <ul class="advantages-list">
             <li>
-              <svg class="icon" width="270" height="120"><use href="./images/sprite.svg#antenna"></use></svg>
+              <div class="advantages-icon"><svg class="icon"><use href="./images/sprite.svg#antenna"></use></svg></div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="details">
                 Идейные соображения, а также начало повседневной работы по
@@ -66,7 +67,7 @@
               </p>
             </li>
             <li>
-              <svg class="icon" width="270" height="120"><use href="./images/sprite.svg#clock"></use></svg>
+              <div class="advantages-icon"><svg class="icon"><use href="./images/sprite.svg#clock"></use></svg></div>
               <h3 class="title">Пунктуальность</h3>
               <p class="details">
                 Задача организации, в особенности же рамки и место обучения
@@ -74,7 +75,7 @@
               </p>
             </li>
             <li>
-              <svg class="icon" width="270" height="120"><use href="./images/sprite.svg#diagram"></use></svg>
+              <div class="advantages-icon"><svg class="icon"><use href="./images/sprite.svg#diagram"></use></svg></div>
               <h3 class="title">Планирование</h3>
               <p class="details">
                 Равным образом консультация с широким активом в значительной
@@ -82,7 +83,7 @@
               </p>
             </li>
             <li>
-              <svg class="icon" width="270" height="120"><use href="./images/sprite.svg#astronaut"></use></svg>
+              <div class="advantages-icon"><svg class="icon"><use href="./images/sprite.svg#astronaut"></use></svg></div>
               <h3 class="title">Современные технологии</h3>
               <p class="details">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -92,7 +93,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section examples">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="examples-list">
@@ -199,22 +200,22 @@
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_1"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_1"></use></svg></a>
             </li>
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_2"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_2"></use></svg></a>
             </li>
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_3"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_3"></use></svg></a>
             </li>
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_4"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_4"></use></svg></a>
             </li>
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_5"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_5"></use></svg></a>
             </li>
             <li>
-              <a href="" class="clients-link"><svg class="icon" width="170" height="90"><use href="./images/sprite.svg#company_6"></use></svg></a>
+              <a href="" class="clients-link"><svg class="icon"><use href="./images/sprite.svg#company_6"></use></svg></a>
             </li>
           </ul>
         </div>
@@ -275,7 +276,9 @@
         <label class="agreement"><input type="checkbox" name="agreement" value="agree" class="checkbox"><span class="icon"></span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="agreement-link">Условия договора</a></label></div>
         <button type="submit" class="modal-button">Отправить</button>
         </form>
-      </div></div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
