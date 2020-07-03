@@ -1,19 +1,30 @@
 .header-list {
-  display: flex;
-  margin-left: 305px;
-  align-items: center;
+  @media screen and(max-width:767px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and(min-width:768px) {
+    margin-left: 84px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: 305px;
+    align-items: center;
+  }
 }
 .header-list li + li {
-  margin-left: 30px;
+  @media screen and(max-width:479px) {
+    margin-top: 16px;
+  }
+  @media screen and(max-width:1199px) {
+    margin-top: 10px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 30px;
+  }
 }
 .contacts-header {
-  padding: 32px 0;
-
   color: $text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition: color $transitionProperty;
 
   &:hover,
