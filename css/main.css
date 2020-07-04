@@ -298,25 +298,22 @@ nav {
   }
 }
 
-.container.hero {
-  padding-top: 118px;
-}
-
-@media screen and (min-width: 1200px) {
-  .container.hero {
-    padding-top: 200px;
-  }
-}
-
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 118px;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .title {
+    padding-top: 200px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -884,17 +881,12 @@ textarea:not(:placeholder-shown) + .textarea-label {
 
 .clients-list li {
   margin: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list li {
-    width: 210px;
-  }
+  width: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .clients-list li {
-    width: 226px;
+    width: calc((100% - 90px) / 3);
   }
 }
 

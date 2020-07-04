@@ -17,15 +17,13 @@
     height: 600px;
   }
 }
-.container.hero {
+.hero .title {
+  margin-top: 0;
+  margin-bottom: 30px;
   padding-top: 118px;
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
   }
-}
-.hero .title {
-  margin-top: 0;
-  margin-bottom: 30px;
 
   color: $secondary-title-color;
   font-weight: 900;
