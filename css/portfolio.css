@@ -327,20 +327,8 @@ nav {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio-filter li:nth-last-child(-n + 2) {
-    margin-top: 15px;
-  }
-}
-
-.portfolio-filter li + li {
-  margin-left: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio-filter li + li:nth-child(4) {
-    margin-left: 0;
-  }
+.portfolio-filter li {
+  margin: 4px;
 }
 
 .filter-buttons {
