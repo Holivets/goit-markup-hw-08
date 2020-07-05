@@ -175,7 +175,6 @@ textarea {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: border-box;
-    flex-shrink: 0;
   }
 }
 .agreement {
@@ -197,6 +196,7 @@ textarea {
   width: 15px;
   border: 2px solid $title-color;
   border-radius: 2px;
+  flex-shrink: 0;
 }
 .agreement-link {
   display: inline;
