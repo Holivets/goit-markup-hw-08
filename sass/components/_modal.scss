@@ -173,7 +173,9 @@ textarea {
     background-color: $accent-color;
     background-image: url(../images/check.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     background-origin: border-box;
+    flex-shrink: 0;
   }
 }
 .agreement {
@@ -197,6 +199,7 @@ textarea {
   border-radius: 2px;
 }
 .agreement-link {
+  display: inline;
   text-decoration: underline;
   color: $accent-color;
 }

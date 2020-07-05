@@ -582,7 +582,10 @@ textarea:not(:placeholder-shown) + .textarea-label {
   background-color: #2196f3;
   background-image: url(../images/check.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .agreement {
@@ -614,6 +617,7 @@ textarea:not(:placeholder-shown) + .textarea-label {
 }
 
 .agreement-link {
+  display: inline;
   text-decoration: underline;
   color: #2196f3;
 }
