@@ -30,6 +30,11 @@
 }
 .portfolio-filter li + li {
   margin-left: 8px;
+  @media screen and(max-width:767px) {
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+  }
 }
 .filter-buttons {
   padding: 6px 22px;
@@ -82,6 +87,15 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
+}
+// .work-list .thumb {
+//   height: 294px;
+// }
+.work-list img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 .card-info {
   padding: 20px 24px;

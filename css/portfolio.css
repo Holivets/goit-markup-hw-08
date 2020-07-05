@@ -337,6 +337,12 @@ nav {
   margin-left: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-filter li + li:nth-child(4) {
+    margin-left: 0;
+  }
+}
+
 .filter-buttons {
   padding: 6px 22px;
   border: 0;
@@ -402,6 +408,15 @@ nav {
 .card-link:hover, .card-link:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.work-list img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .card-info {
@@ -589,7 +604,7 @@ footer {
 
 .subscription input[type='email'] {
   margin-right: 12px;
-  width: 358px;
+  min-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -605,10 +620,10 @@ footer {
 
 @media screen and (max-width: 1199px) {
   .subscription input[type='email'] {
-    display: block;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    min-width: 100%;
   }
 }
 

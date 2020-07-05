@@ -8,6 +8,18 @@
     margin: -15px;
   }
 }
+.team-list .thumb {
+  height: 320px;
+  @media screen and(min-width:768px) {
+    height: 260px;
+  }
+}
+.team-list img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
 .team-list > li {
   background-color: $secondary-title-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
